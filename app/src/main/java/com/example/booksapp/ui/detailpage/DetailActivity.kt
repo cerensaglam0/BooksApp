@@ -1,8 +1,8 @@
 package com.example.booksapp.ui.detailpage
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.booksapp.R
 import com.example.booksapp.data.response.Book
@@ -19,6 +19,7 @@ class DetailActivity : AppCompatActivity() {
 
         val book = intent.getParcelableExtra<Book>("key_book")
         binding.book=book
+
 
         binding.textViewWebView.setOnClickListener {
             val intent=Intent(this, Detail2Activity::class.java)
